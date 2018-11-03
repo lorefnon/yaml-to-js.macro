@@ -1,6 +1,6 @@
 {
   "name": "yaml-to-js.macro",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "babel macro for converting yaml to js",
   "main": "macro.js",
   "scripts": {
