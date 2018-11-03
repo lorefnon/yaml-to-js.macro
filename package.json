@@ -4,9 +4,16 @@
   "description": "babel macro for converting yaml to js",
   "main": "macro.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "format": "prettier --single-quote --write **/*.js"
   },
-  "keywords": ["babel-plugin-macro", "yaml", "babel", "macro", "babel-plugin"],
+  "keywords": [
+    "babel-plugin-macro",
+    "yaml",
+    "babel",
+    "macro",
+    "babel-plugin"
+  ],
   "author": "Lorefnon <lorefnon@gmail.com>",
   "repository": {
     "type": "git",
@@ -18,7 +25,8 @@
     "@babel/core": "^7.1.2",
     "babel-plugin-macros": "^2.4.2",
     "babel-plugin-tester": "^5.5.1",
-    "jest": "^23.6.0"
+    "jest": "^23.6.0",
+    "prettier": "1.14.3"
   },
   "dependencies": {
     "debug": "^4.1.0",
