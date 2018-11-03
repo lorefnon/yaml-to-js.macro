@@ -7,13 +7,13 @@ Babel macro to convert yaml template strings to javascript objects at build time
 
 ## Why ?
 
-[Yaml](http://yaml.org/) is much more terse and compact representation which makes write large deeply nested data structures much more bearable.
+[Yaml](http://yaml.org/) is a terse and compact representation which makes writing large deeply nested data structures much more bearable than JSON or vanilla javascript.
 
 It is [especially well suited](https://hashnode.com/post/whats-your-favourite-config-file-format-cinn3f9o20038ns534z84ik15/answer/cinp0ph0n00toc3538j4onqft) for configuration objects.
 
-This plugin enables you to use inline yaml wherever you can use ordinary javascript objects, with **zero** additional run time overhead because the yaml expressions are transpiled to javascript objects at compile time. 
+This plugin enables us to use inline yaml wherever we could use ordinary javascript objects, with **zero** additional run time overhead because the yaml expressions are transpiled to javascript objects at compile time (through a [babel macro](https://github.com/kentcdodds/babel-plugin-macros)). 
 
-Given interpolation support (outlined below), you can also construct objects having non serializable members like date, function etc. through yaml syntax.
+Given [interpolation support](https://github.com/lorefnon/yaml-to-js.macro#support-for-interpolated-expressions), we can also construct objects having non serializable members like date, function etc. through yaml syntax.
 
 ## Examples
 
