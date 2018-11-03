@@ -1,0 +1,31 @@
+{
+  "name": "yaml-to-js.macro",
+  "version": "0.1.0",
+  "description": "babel macro for converting yaml to js",
+  "main": "macro.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": ["babel-plugin-macro", "yaml", "babel", "macro", "babel-plugin"],
+  "author": "Lorefnon <lorefnon@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lorefnon/yaml-to-js.macro.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "babel-plugin-macros": "^2.4.2",
+    "babel-plugin-tester": "^5.5.1",
+    "jest": "^23.6.0"
+  },
+  "dependencies": {
+    "debug": "^4.1.0",
+    "js-yaml": "^3.12.0",
+    "lodash": "^4.17.11"
+  },
+  "peerDependencies": {
+    "babel-plugin-macros": "^2.4.2"
+  }
+}
