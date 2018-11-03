@@ -1,7 +1,7 @@
 # yaml-to-js.macro
 
 Babel macro to convert yaml template strings to javascript objects at build time.
-
+[![Build Status](https://travis-ci.org/lorefnon/yaml-to-js.macro.svg?branch=master)](https://travis-ci.org/lorefnon/yaml-to-js.macro)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
