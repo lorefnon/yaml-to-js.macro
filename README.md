@@ -5,6 +5,17 @@ Babel macro to convert yaml template strings to javascript objects at build time
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## Why ?
+
+[Yaml](http://yaml.org/) is much more terse and compact representation which makes write large deeply nested data structures much more bearable.
+
+It is [especially well suited](https://hashnode.com/post/whats-your-favourite-config-file-format-cinn3f9o20038ns534z84ik15/answer/cinp0ph0n00toc3538j4onqft) for configuration objects.
+
+This plugin enables you to use inline yaml wherever you can use ordinary javascript objects, with **zero** additional run time overhead because the yaml expressions are transpiled to javascript objects at compile time. 
+
+Given interpolation support (outlined below), you can also construct objects having non serializable members like date, function etc. through yaml syntax.
+
+## Examples
 
 From: 
 
@@ -30,6 +41,8 @@ const foo = {
     }
 }
 ```
+
+### Support for interpolated expressions
 
 There is a reasonable support for interpolated expressions: 
 
@@ -66,7 +79,7 @@ const foo = {
 
 Note that when the interpolated expression is standalone, it will not be coerced as in the above example. 
 
-However if there are multiple interpolated expressions in the same phrase, they will coerced into a string: 
+However if there are multiple interpolated expressions within the same member, they will coerced into a string: 
 
 ```js
 const foo = yml`
@@ -151,4 +164,14 @@ In `.babelrc`:
 }
 ```
 
-## Support for interpolated expressions
+## Supported YAML features
+
+Unsafe YAML features are disabled. [Details](https://github.com/nodeca/js-yaml#safeload-string---options-).
+
+## Contributing
+
+Contributions are welcome in form of pull requests, bug reports.
+
+## Commercial Support / Donations
+
+There is no commercial support available for this product. I also don't accept donations. 
